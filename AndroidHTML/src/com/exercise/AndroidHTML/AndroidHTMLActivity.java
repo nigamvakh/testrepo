@@ -1,21 +1,5 @@
-asdfasdfadf
-asdfasdfadsf
-asdfadfasdfasdf
-asdf
-asd
-f
-asdf
-adsf
-asdfasdf
-as
-df
-asdf
-asdf
-a
-sdf
-adsf
 package com.exercise.AndroidHTML;
-
+import com.java.abce.com
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
