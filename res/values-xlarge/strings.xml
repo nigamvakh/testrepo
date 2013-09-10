@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HDIFAMActivity!</string>
+    <string name="app_name">HDIFAM</string>
+    <dimen name="textSize">40sp</dimen>
+    <dimen  name="percentsize">100sp</dimen>
+    <dimen name="titlesize">50sp</dimen>
+
+	
+</resources>

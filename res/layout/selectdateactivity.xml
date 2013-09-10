@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/yourdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp" 
+            >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:src="@drawable/ht_your_bday" />
+
+            <LinearLayout
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView1"
+                android:background="@drawable/hs_dategb"
+                android:padding="10dp"
+                >
+
+                <Button
+                    android:id="@+id/btnHerMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnmonth_bg"
+                    android:onClick="btnSelectDateClicked"
+                    android:layout_marginRight="9dp"
+                    android:text="Jan"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@android:color/darker_gray"
+                    android:padding="5dp"
+                    />
+                
+                <Button
+                    android:id="@+id/btnHerDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btndate_bg"
+                    android:onClick="btnSelectDateClicked"
+                    android:layout_marginRight="9dp"
+                    android:text="01"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                   android:textColor="@android:color/darker_gray" 
+                    android:padding="5dp"
+                   
+                   />
+
+                <Button
+                    android:id="@+id/btnHerYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnyear_bg"
+                    android:onClick="btnSelectDateClicked"
+                    android:text="1985"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@android:color/darker_gray"
+                    android:padding="5dp"
+                    
+                    />
+            </LinearLayout>
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yourdate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtExeMatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ht_number"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageViewExeMatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ht_excel" 
+                    android:layout_marginLeft="20dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" 
+                >
+
+                <TextView
+                    android:id="@+id/txtGoodMatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ht_number"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ht_good" 
+                    android:layout_marginLeft="20dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        
+       
+        <RelativeLayout
+            android:id="@+id/hisdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/match"
+            android:layout_marginTop="32dp" 
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ht_his_bday" />
+
+            <LinearLayout
+                android:id="@+id/hisdateselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView6"
+                android:background="@drawable/hs_dategb"
+                android:padding="10dp"
+                >
+
+                <Button
+                    android:id="@+id/btnHisMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnmonth_bg"
+                    android:onClick="btnSelectDateClicked"
+                    android:layout_marginRight="9dp"
+                    android:text="Jan"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@android:color/darker_gray" 
+	                android:padding="5dp"                    
+                    />
+                
+                <Button
+                    android:id="@+id/btnHisDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btndate_bg"
+                    android:onClick="btnSelectDateClicked"
+                    android:layout_marginRight="9dp"
+                    android:text="01"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@android:color/darker_gray" 
+	                android:padding="5dp"                    
+                    />
+
+                <Button
+                    android:id="@+id/btnHisYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnyear_bg"
+                    android:onClick="btnSelectDateClicked"
+                    android:text="1985"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@android:color/darker_gray" 
+	                android:padding="5dp"                    
+                    />
+            </LinearLayout>
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/predict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/hisdate"
+            android:layout_marginTop="24dp" >
+
+            <Button
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hisdate"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/predicatelove_bg"
+                android:onClick="btnPredicateClicked"
+                 />
+
+            <Button
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btndiamond_bg"
+                android:onClick="btnPredicateClicked"
+                 />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/headertext" />
+    </RelativeLayout>
+
+</RelativeLayout>
